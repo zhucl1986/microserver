@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<fop version="1.0">
+  <base>.</base>
+  <source-resolution>72</source-resolution>
+  <target-resolution>72</target-resolution>
+  <default-page-settings height="29.7cm" width="21cm"/>
+  <renderers>
+    <renderer mime="application/pdf">
+      <filterList>
+        <value>flate</value>
+      </filterList>
+      <fonts>
+        <font metrics-url="fop/fonts/simsun.xml" kerning="yes" embed-url="fop/fonts/simsun.ttf">
+         <font-triplet name="SimSun" style="normal" weight="normal" />
+         <font-triplet name="SimSun" style="normal" weight="bold" />
+         <font-triplet name="SimSun" style="italic" weight="normal" />
+         <font-triplet name="SimSun" style="italic" weight="bold" />
+        </font>
+        <font metrics-url="fop/fonts/simsun.xml" kerning="yes" embed-url="fop/fonts/simsun.ttf">
+         <font-triplet name="宋体" style="normal" weight="normal" />
+         <font-triplet name="宋体" style="normal" weight="bold" />
+         <font-triplet name="宋体" style="italic" weight="normal" />
+         <font-triplet name="宋体" style="italic" weight="bold" />
+        </font>
+        <font metrics-url="fop/fonts/simhei.xml" kerning="yes" embed-url="fop/fonts/SIMHEI.TTF">
+         <font-triplet name="黑体" style="normal" weight="normal" />
+         <font-triplet name="黑体" style="normal" weight="bold" />
+         <font-triplet name="黑体" style="italic" weight="normal" />
+         <font-triplet name="黑体" style="italic" weight="bold" />
+        </font>
+      </fonts>
+    </renderer>
+    <renderer mime="application/postscript">
+    </renderer>
+    <renderer mime="image/png">
+      <!--transparent-page-background>true</transparent-page-background-->
+    </renderer>
+    <renderer mime="image/tiff">
+      <!--transparent-page-background>true</transparent-page-background-->
+      <!--compression>CCITT T.6</compression-->
+    </renderer>
+    <renderer mime="text/xml">
+    </renderer>
+    <!-- RTF does not have a renderer
+    <renderer mime="text/rtf">
+    </renderer>
+    -->
+  </renderers>
+</fop>
+

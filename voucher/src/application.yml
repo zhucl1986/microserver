@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: test  
+evs:
+  isFoSave: true
+  aft-encoding: UTF-8
